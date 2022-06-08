@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { RiHomeLine, RiFileCopyLine } from "react-icons/ri";
 import { FaWallet } from "react-icons/fa";
-import { AiOutlinePieChart } from "react-icons/ai";
+// import { AiOutlinePieChart } from "react-icons/ai";
 import Badge from "./Badge";
-import AvatarImage from "../assets/img2.jpg";
+import AvatarImage from "../assets/img3.jpg";
 import { darkThemeColor } from "../utils";
 function Sidebar() {
   return (
@@ -12,7 +12,7 @@ function Sidebar() {
       <ProfileContainer>
         <Avatar src={AvatarImage} />
         <Name>Sarthak Modhe</Name>
-        <Badge content="Pro Level" />
+        <Badge content="Developer" />
       </ProfileContainer>
       <LinksContainer>
         <Links>

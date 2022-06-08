@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Badge from "./Badge";
-import AvatarImage from "../assets/avatarImage5.jpg";
-import AvatarImage2 from "../assets/avatarImage6.jpg";
+import Untitled from "../assets/Untitled design.jpg";
+import Pglife from "../assets/PG Life.jpg"
 import { cardShadow, hoverEffect } from "../utils";
 
 function Invoices() {
@@ -12,31 +12,29 @@ function Invoices() {
         <Invoice>
           <Info>
             <Avatar>
-              <img src={AvatarImage} alt="" />
+              <img src={Untitled} alt="" />
             </Avatar>
             <TextContainer>
-              <Title>Alexander Williams</Title>
-              <SubTitle>ABC Holdings</SubTitle>
+              <Title>Github Finder</Title>
+              <SubTitle>To find anyone's github profile</SubTitle>
             </TextContainer>
           </Info>
           <Container>
-            <Badge content="Paid" paid />
-            <Price>$ 1,200.87</Price>
+            <Badge content="Completed" paid />
           </Container>
         </Invoice>
         <Invoice>
           <Info>
             <Avatar>
-              <img src={AvatarImage2} alt="" />
+              <img src={Pglife} alt="" />
             </Avatar>
             <TextContainer>
-              <Title>John Philips</Title>
-              <SubTitle>Inchor Associates</SubTitle>
+              <Title>PG Life</Title>
+              <SubTitle>To find nearby Hostels and PG's</SubTitle>
             </TextContainer>
           </Info>
           <Container>
-            <Badge content="Late" late />
-            <Price>$ 1,200.87</Price>
+            <Badge content="Yet to Complete" late />
           </Container>
         </Invoice>
       </CardContent>
@@ -107,6 +105,7 @@ const SubTitle = styled.h5`
 const Container = styled.div`
   display: flex;
   justify-content: space-between;
+  color: #00FF00;
   width: 30%;
   align-items: center;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
@@ -116,6 +115,5 @@ const Container = styled.div`
   }
 `;
 
-const Price = styled.div``;
 
 export default Invoices;

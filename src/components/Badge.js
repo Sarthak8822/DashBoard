@@ -39,8 +39,9 @@ const Div = styled.span`
     ${({ paid }) =>
     paid &&
     `
-        background-color:#70e00041;
+        background-color:		#008000;
         color:#70e000;
+        text-color: black;
     `}
 
 ${({ late }) =>

@@ -8,10 +8,10 @@ function Info() {
       <Card>
         <CardContent>
           <Row>
-            <Digit>98</Digit>
+            <Digit>Reputed</Digit>
             <InfoContainer>
               <Title>Rank</Title>
-              <SubTitle>In top 20%</SubTitle>
+              <SubTitle>1% Solved</SubTitle>
             </InfoContainer>
           </Row>
         </CardContent>
@@ -19,15 +19,16 @@ function Info() {
       <Card>
         <CardContent>
           <Row>
-            <Digit>32</Digit>
+            <Digit>5+</Digit>
             <InfoContainer>
               <Title>Projects</Title>
               <SubTitle>8 this month</SubTitle>
             </InfoContainer>
           </Row>
           <Row justify>
-            <Badge content="mobile app" glow />
-            <Badge content="branding" glow />
+            <Badge content="Frontend" glow />
+            <Badge content="React" glow />
+            <Badge content="DSA" glow />
           </Row>
         </CardContent>
       </Card>

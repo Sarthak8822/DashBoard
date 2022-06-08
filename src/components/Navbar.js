@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <NavbarContainer>
       <Text>
-        Good morning,
+        Hi, This is
         <span> Sarthak</span>
       </Text>
       <InputContainer>

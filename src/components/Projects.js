@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import AvatarImage from "../assets/avatarImage2.jpg";
-import AvatarImage2 from "../assets/avatarImage3.jpg";
+import Portfolio from "../assets/Portfolio.png";
+import dashboard from "../assets/dashboard.jpg";
 import { cardShadow, hoverEffect, themeColor } from "../utils";
 
 function Projects() {
@@ -9,23 +9,25 @@ function Projects() {
     <YourProjects>
       <Project>
         <Avatar>
-          <img src={AvatarImage} alt="" />
+          <img src={Portfolio} alt="" />
         </Avatar>
         <Detail>
-          <Title>Logo design for Bakery</Title>
-          <SubTitle>1 day remaining</SubTitle>
+          <Title>PortFolio Website</Title>
+          <SubTitle>Will be completed by 10th June</SubTitle>
         </Detail>
       </Project>
       <Project>
         <Avatar>
-          <img src={AvatarImage2} alt="" />
+          <img src={dashboard} alt="" />
         </Avatar>
         <Detail>
-          <Title>Personal branding project</Title>
-          <SubTitle>5 days remaining</SubTitle>
+          <Title>Super Dashboard</Title>
+          <SubTitle>Completed</SubTitle>
         </Detail>
       </Project>
-      <AllProjects>See all projects</AllProjects>
+      <AllProjects>
+      <a href="https://www.github.com/Sarthak8822">See all projects</a>    
+      </AllProjects>
     </YourProjects>
   );
 }
@@ -76,6 +78,7 @@ const AllProjects = styled.h5`
   text-align: end;
   color: ${themeColor};
   cursor: pointer;
+  underline: none;
 `;
 
 export default Projects;

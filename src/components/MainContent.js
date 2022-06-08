@@ -3,8 +3,9 @@ import styled from "styled-components";
 import Navbar from "./Navbar";
 import Questions from "./Questions";
 import Info from "./Info";
-import JoinSlack from "./JoinSlack";
-import ProjectRecommendation from "./ProjectRecommendation.js";
+import JoinGithub from "./JoinGithub";
+import Topicsdsa from "./Topicsdsa.js";
+import Profiles from "./Profiles";
 import Projects from "./Projects";
 import RecentProj from "./RecentProj";
 
@@ -29,11 +30,15 @@ function MainContent() {
               <TitleText>Recent Projects</TitleText>
               <RecentProj />
             </InvoiceContainer>
-            <JoinSlack />
+            <JoinGithub />
           </ColumnOne2>
           <ColumnTwo2>
-            <TitleText>Recommended Project</TitleText>
-            <ProjectRecommendation />
+            <TitleText>Completed topics for DSA</TitleText>
+            <Topicsdsa />
+          </ColumnTwo2>
+          <ColumnTwo2>
+            <TitleText>My Profiles</TitleText>
+            <Profiles />
           </ColumnTwo2>
         </SectionTwo>
       </SubContainer>
