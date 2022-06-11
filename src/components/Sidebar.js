@@ -6,6 +6,8 @@ import { FaWallet } from "react-icons/fa";
 import Badge from "./Badge";
 import AvatarImage from "../assets/img3.jpg";
 import { darkThemeColor } from "../utils";
+import { Link } from "react-router-dom";
+
 function Sidebar() {
   return (
     <Container>
@@ -16,17 +18,25 @@ function Sidebar() {
       </ProfileContainer>
       <LinksContainer>
         <Links>
-          <Link>
-            <RiHomeLine />
-            <h3>Dashboard</h3>
+          <Link to="/">
+            <Link1>
+              <RiHomeLine />
+              <h3>Dashboard</h3>
+            </Link1>
           </Link>
-          <Link>
-            <RiFileCopyLine />
-            <h3>Projects</h3>
+
+          <Link to="/projects">
+            <Link1>
+              <RiFileCopyLine />
+              <h3>Projects</h3>
+            </Link1>
           </Link>
-          <Link>
-            <FaWallet />
-            <h3>DSA Questions</h3>
+
+          <Link to="/dsaques">
+            <Link1>
+              <FaWallet />
+              <h3>DSA Questions</h3>
+            </Link1>
           </Link>
         </Links>
         <ContactContainer>
@@ -88,7 +98,7 @@ const Links = styled.ul`
   height: 60%;
 `;
 
-const Link = styled.li`
+const Link1 = styled.li`
   margin-left: 25%;
   margin-bottom: 2rem;
   display: flex;

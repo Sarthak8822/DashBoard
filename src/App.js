@@ -2,12 +2,26 @@ import "./App.css";
 import styled from "styled-components";
 import Sidebar from "./components/Sidebar";
 import MainContent from "./components/MainContent";
-function App() {
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Projects1 from "./components/Projects1";
+import DSAques from "./components/DSAques";
+function Dashboard() {
   return (
     <Container>
       <Sidebar />
       <MainContent />
     </Container>
+  );
+}
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route exact path="/projects" element={<Projects1 />} />
+        <Route exact path="/dsaques" element={<DSAques />} />
+        <Route exact path="/" element={<Dashboard />}></Route>
+      </Routes>
+    </Router>
   );
 }
 

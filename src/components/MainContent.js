@@ -9,6 +9,7 @@ import Profiles from "./Profiles";
 import Projects from "./Projects";
 import RecentProj from "./RecentProj";
 
+
 function MainContent() {
   return (
     <Container>
